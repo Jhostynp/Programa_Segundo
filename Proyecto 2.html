@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html lang="en"> 
+<head>
+    <meta charset="utf-8"><!--JHOSTYN PILATASIG-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <LINK REL=StyleSheet HREF="css/Style.css" TYPE="text/css" MEDIA=screen>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="js/jquery.js"></script>
+<script src="js/formulario.js" language="javascript" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script>
+            $(document).on("click",".btn_ejecutar",()=>{
+            $("#titulo").attr("class","bg-danger");
+        })
+</script> <!--JHOSTYN PILATASIG-->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>           
+</head>                      <!--Jhostyn Pilatasig-->
+<body>
+<div class="container-fluid" >
+	<div class="row bg-primary text-white " style="border-bottom:solid 10px #fff; "> 
+		<div class="col-md-1">
+			<img width="100px" src="https://www.cloudcms.com/images/quickstarts/react/react.df70b005.png">
+		</div>
+		<div class="col-md-11 text-center">
+	     	<h1 id="titulo_blog">MI PRIMERA PAGINA WEB</h1>
+		</div>
+	</div>
+	<div class="row" id="body">
+		<!--Jhostyn Pilatasig-->
+		<div class="col-md-3 text-black" style="background:#FFFFFF;height:500px" id="menu"><h3>MENU</h3>
+<ul class="mnu_container">		
+    		        <li class="mnu_item"><a class="fa fa-home" href="#home">&nbsp;Home</a></li>
+                    <li class="mnu_item"><a class="fa fa-user" href="#aboutus">&nbsp;About Us</a></li>
+                    <li class="mnu_item"><a class="fa fa-laptop" href="">&nbsp;Products</a></li>
+        <!--Jhostyn Pilatasig-->
+                    <li class="mnu_item"><a class="fa fa-mobile" href="">&nbsp;Contact</a></li>
+    				<li class="mnu_item"><a href="https://es.reactjs.org/"><i class="fab fa-react">&nbsp;ReactJs </i></a></li>
+    		
+   				    <li class="mnu_item"><a href="https://reactnative.dev/"><i class="fab fa-react">&nbsp;ReactNative</i></a></li>
+   			
+    				<li class="mnu_item"><a href="https://nodejs.org/es/"><i class="fab fa-node">&nbsp;NodeJs</i></a></li>
+    				
+    			
+    				<li class="mnu_item"><a href="https://flutter.dev/"><i class="fas fa-stream">&nbsp;Flutter</i></a></li>
+    				
+    				        <!--Jhostyn Pilatasig-->
+
+    				<li class="mnu_item"><a href="https://webpack.js.org/"><i class="fab fa-weebly">&nbsp;WebPack</i></a></li>
+    				
+    				        <!--Jhostyn Pilatasig-->
+    				<li class="mnu_item"><a href="https://jquery.com/"><i class="fas fa-rss">&nbsp;JQuery</i></a></li>	    
+                    
+                    </ul>
+                    </div>
+        <!--Jhostyn Pilatasig-->
+<div class="col-md-6 text-center">
+                     <div class="row" id="formulario">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                    <h3 class="text-center mb-4">Formulario de registro</h3>
+                    <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text">Apellidos:</span>
+                    </div><!--JHOSTYN PILATASIG-->
+                    <input type="text" id="txtapellido" class="form-control">
+                    </div> 
+                    <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text">Nombres:</span>
+                    </div>
+                    <input type="text" id="txtnombres" class="form-control">
+                    </div> 
+                    <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Usuario:</span>
+                    </div><!--JHOSTYN PILATASIG-->
+                    <input type="text" id="user" class="form-control">
+                    </div>   
+                     <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Contraseña:</span>
+                    </div>
+                    <input type="password" id="password" class="form-control">
+                    </div>  
+                    <div class="input-group mb-3"><!--JHOSTYN PILATASIG-->
+                      <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01"><small>Ciudad:</small></label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+                 <option value="AMBATO">AMBATO</option>
+                    <option value="CUENCA">CUENCA</option>
+                    <option value="GUAYAQUIL">GUAYAQUIL</option>
+                    <option value="QUITO">QUITO</option>
+  </select>
+</div>
+<div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Mujer</span>
+                    </div>
+                    <input type="radio" name="sexo" class="form-control">
+                    <div class="input-group-prepend">
+                        <spam class="input-group-text">Hombre</spam>
+                    </div>
+                        <input type="radio" name="sexo" class="form-control">
+                    </div>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">No soy un robot</span>
+                        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-
+                        <input type="checkbox">
+                    </div>
+
+                    <br>
+                     <button id="btn_registrar" class="btn btn-dark fa fa-floppy-o"style="background:#34445c">&nbsp;&nbsp;&nbsp;Registrar</button>
+                </div>
+              </div>
+            </div>
+        <div class="col-md-3" id="publicidad">
+            <h5 id="home">Incio</h5>
+        <img src="https://1.bp.blogspot.com/-ZFeHdOeHOM0/VdxozlSfsTI/AAAAAAAAFcM/ttVeIU9zi8Y7lnng582ky10O4ECniYOtgCPcB/s1600/data-science-venn-diagram-by-Drew-Conway.png">
+        <h3>Data Science</h3>
+        <p>
+        El Científico de Datos o Data Scientist es un perfil profesional que traduce los grandes volúmenes de información disponibles conocidos como Big Data. Provienen de todo tipo de fuentes de información masivas y las convierten en respuestas
+        <h5 id="aboutus">Acerca de Nosotros</h5>
+        <img src="https://image.freepik.com/vector-gratis/acerca-nosotros-tipografia-estilo-vector_53876-56711.jpg">
+        <p>
+        Somos estudiantes que buscan dominar el arte de la programacion y asi ser mas creativos y mejorar cada vez nuestra forma de aprender
+        </p>
+          <h5 id="aboutus">contactenos</h5>
+        <img src="https://topcontrolec.com/wp-content/uploads/2019/04/contactenos.jpg
+">
+        <p>
+        PUEDE LLAMAR A ESTOS NUMEROS O BUSCANOS EN NUETRAS REDES SOCIALES
+        0959181945
+        0981714249
+        Lanet
+        Lanet
+        </p>
+        </div>
+	</div>
+</div>
+ <div class="row " style="background:#000000; border:solid 2px;">
+ <div class="col-md-9" > 
+ </div>
+ 		<div class="col-md-3">
+        <!--Jhostyn Pilatasig-->
+		<a href="https://api.whatsapp.com/send?phone=593981174843&text=Necesito%20Informacion%20Acerca%20De%20Su%20Pagina">
+        <i class="fa fa-whatsapp fa-2x text-success" ><small style="font-size:12px">0959181945</small></i> 
+        </a>
+
+       <a href="https://www.youtube.com/channel/UCV6XIPttliiEL5KlRpce--Q?view_as=subscriber">         
+        <i class="fa fa-youtube-play fa-2x text-danger"></i>
+        </a>
+
+        <a href="https://www.facebook.com/">
+        	<i class="fa fa-facebook-official fa-2x"></i>
+        </a>
+
+        <a href="https://www.instagram.com">
+        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+        </a>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
