@@ -1,22 +1,42 @@
 $(document).on("click","#btn_registrar",function(){
-//validar apellido
+
 let apellido=$("#txtapellido").val();
 if(apellido.trim().length==0){
-alert("Debe Escribir Un Apellido");
+mensaje("Apellido Es Obligatorio",'error');
 return false;
 }
-//validar nombre
 let nombre=$("#txtnombres").val();
 if(nombre.trim().length==0){
-alert("Debe Escribir Un Nombre");
+mensaje("Nombre Es Obligatorio",'error');
 return false;
 }
-alert("Datos Correctos");
+let usuario=$("#user").val();
+if(usuario.trim().length==0){
+mensaje("Usuario Es Obligatorio",'error');
+return false;
+}
+let contraseña=$("#password").val();
+if(contraseña.trim().length==0){
+mensaje("Contraseña es obligatoria",'error');
+return false;
+}
+let confirmar_contraseña=$("#confirm_password").val();
+if(confirmar_contraseña!==contraseña){
+mensaje("Las contraseñas no coinciden",'error');
+return false;
+}
+let ciudad=$("#ciudad").val();
+if(ciudad.trim().length==0){
+mensaje("Elija Una Ciudad",'error');
+return false;
+}
+mensaje("DATOS CORRECTOS",'success');
 })
-
-let Usuario=$("#txtuser").val();
-if(Usuario.trim().length==0){
-alert("Debe Escribir un Usuario");
-return false;
+const mensaje=(text="",icon='')=>{
+Swal.fire({
+  title: "Atencion!",
+  text: text,
+  icon: icon,
+  confirmButtonText: 'Okay'
+})
 }
-alert("Debe escribir un Usuario");
